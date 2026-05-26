@@ -7,6 +7,7 @@ export default function Navbar() {
 
   const links = [
     { href: "#services", label: "Services" },
+    { href: "https://apps.aidevelopment.in/", label: "Demo Projects", external: true },
     { href: "#process", label: "How It Works" },
     { href: "#pricing", label: "Pricing" },
     { href: "#faq", label: "FAQ" },
@@ -28,6 +29,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
+                {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 className="text-sm text-gray-300 hover:text-white transition-colors"
               >
                 {link.label}
@@ -61,6 +63,7 @@ export default function Navbar() {
               <a
                 key={link.href}
                 href={link.href}
+                {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                 onClick={() => setIsOpen(false)}
                 className="block py-2 text-gray-300 hover:text-white transition-colors"
               >
