@@ -20,7 +20,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
     );
-    window.open(`mailto:hello@aidevelopment.in?subject=${subject}&body=${body}`);
+    window.open(`mailto:Amntwry@gmail.com?subject=${subject}&body=${body}`);
     setSubmitted(true);
   };
 
@@ -42,7 +42,7 @@ export default function Contact() {
             <div className="space-y-6">
               {/* WhatsApp */}
               <a
-                href="https://wa.me/919999999999?text=Hi%2C%20I%27m%20interested%20in%20getting%20a%20website%20built"
+                href="https://wa.me/919137815694?text=Hi%2C%20I%27m%20interested%20in%20getting%20a%20website%20built"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 rounded-lg border border-gray-800 hover:border-green-500/50 hover:bg-green-500/5 transition-all group"
@@ -62,7 +62,7 @@ export default function Contact() {
 
               {/* Email */}
               <a
-                href="mailto:hello@aidevelopment.in"
+                href="mailto:Amntwry@gmail.com"
                 className="flex items-center gap-4 p-4 rounded-lg border border-gray-800 hover:border-blue-500/50 hover:bg-blue-500/5 transition-all group"
               >
                 <div className="w-10 h-10 rounded-full bg-blue-500/20 flex items-center justify-center">
@@ -74,7 +74,7 @@ export default function Contact() {
                   <p className="font-medium group-hover:text-blue-400 transition-colors">
                     Email
                   </p>
-                  <p className="text-sm text-gray-500">hello@aidevelopment.in</p>
+                  <p className="text-sm text-gray-500">Amntwry@gmail.com</p>
                 </div>
               </a>
             </div>
