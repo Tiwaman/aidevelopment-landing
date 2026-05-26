@@ -53,7 +53,7 @@ export default function WhatsAppChat() {
   }, []);
 
   return (
-    <div className="rounded-xl overflow-hidden border border-gray-700/50 bg-gray-900/90 shadow-2xl shadow-green-500/5">
+    <div className="rounded-xl overflow-hidden border border-gray-700/50 bg-gray-900/90 shadow-2xl shadow-green-500/5 h-[300px]">
       {/* WhatsApp header */}
       <div className="flex items-center gap-3 px-4 py-3 bg-[#1f2c34] border-b border-gray-700/50">
         <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">
@@ -66,7 +66,7 @@ export default function WhatsAppChat() {
       </div>
 
       {/* Chat body */}
-      <div className="p-3 min-h-[260px] bg-[#0b141a] space-y-2 overflow-hidden">
+      <div className="p-3 flex-1 bg-[#0b141a] space-y-2 overflow-hidden">
         {messages.slice(0, visibleMessages).map((msg, index) => (
           <div
             key={index}
