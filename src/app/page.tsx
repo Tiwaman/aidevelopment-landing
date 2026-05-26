@@ -6,10 +6,12 @@ import Process from "@/components/Process";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import DotGrid from "@/components/DotGrid";
 
 export default function Home() {
   return (
     <main>
+      <DotGrid />
       <Navbar />
       <Hero />
       <Services />
