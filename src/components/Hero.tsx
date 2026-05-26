@@ -1,3 +1,8 @@
+"use client";
+
+import CodeAnimation from "./CodeAnimation";
+import WhatsAppChat from "./WhatsAppChat";
+
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center section-padding pt-24">
@@ -8,7 +13,9 @@ export default function Hero() {
       </div>
 
       <div className="container-max relative z-10">
-        <div className="max-w-4xl">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left side - text */}
+          <div>
           <div className="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 rounded-full px-4 py-1.5 mb-6">
             <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
             <span className="text-sm text-blue-400">
@@ -66,6 +73,13 @@ export default function Hero() {
               </svg>
               <span>Mobile responsive</span>
             </div>
+          </div>
+        </div>
+
+          {/* Right side - animations */}
+          <div className="hidden lg:flex flex-col gap-6">
+            <CodeAnimation />
+            <WhatsAppChat />
           </div>
         </div>
       </div>
