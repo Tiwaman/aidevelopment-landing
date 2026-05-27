@@ -26,16 +26,17 @@ export default function Hero() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             Professional Websites for
             <br />
-            Small Businesses at{" "}
+            Small Businesses{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
-              ₹15,000
+              Tailored to You
             </span>
           </h1>
 
           <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mb-8">
             Get a fast, modern, and mobile-friendly website that brings your
-            business online — without burning a hole in your pocket. Plus
-            ongoing maintenance so you never worry about updates.
+            business online — custom-built for your needs with a quote that
+            fits your budget. Plus ongoing maintenance so you never worry
+            about updates.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
