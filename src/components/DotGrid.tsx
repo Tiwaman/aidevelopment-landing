@@ -27,6 +27,16 @@ export default function DotGrid() {
       mouseRef.current = { x: e.clientX, y: e.clientY };
     };
 
+    const handleTouchMove = (e: TouchEvent) => {
+      if (e.touches.length > 0) {
+        mouseRef.current = { x: e.touches[0].clientX, y: e.touches[0].clientY };
+      }
+    };
+
+    const handleTouchEnd = () => {
+      mouseRef.current = { x: -1000, y: -1000 };
+    };
+
     const draw = () => {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -62,11 +72,15 @@ export default function DotGrid() {
 
     window.addEventListener("resize", resize);
     window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("touchmove", handleTouchMove);
+    window.addEventListener("touchend", handleTouchEnd);
 
     return () => {
       cancelAnimationFrame(animationId);
       window.removeEventListener("resize", resize);
       window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("touchmove", handleTouchMove);
+      window.removeEventListener("touchend", handleTouchEnd);
     };
   }, []);
 

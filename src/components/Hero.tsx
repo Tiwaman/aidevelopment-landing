@@ -77,7 +77,7 @@ export default function Hero() {
         </div>
 
           {/* Right side - animations */}
-          <div className="hidden lg:flex flex-col gap-6">
+          <div className="flex flex-col gap-6">
             <CodeAnimation />
             <WhatsAppChat />
           </div>
